@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tax Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div class="f1">
+        <div id="f2">
+            <label for="base_salary">Base Salary</label><br>
+            <input type="number" id="base_salary" /><br>
+            <label for="hra">HRA</label><br>
+            <input type="number" id="hra" min="0" max="100" /><br>
+            <label for="oa">OA</label><br>
+            <input type="number" id="oa" min="0" max="100"/><br><br>
+            <input type="submit" onclick="cv()" value="Submit" />
+        </div>
+        <div id="f3">
+            <p id="p1">Result</p>
+            <p id="p2"></p>
+            <p id="p3"></p>
+        </div>
+    </div>
+
+</body>
+</html>

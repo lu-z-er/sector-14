@@ -1,0 +1,31 @@
+.f1{
+    height: 100vh;
+    width: auto;
+    display: grid;
+    place-items: center;
+    background-color: gray;
+}
+#f2{
+    display: grid;
+    place-items: center;
+    border: 2px black solid;
+    width: 230px;
+    height: 250px;
+    padding: 25px;
+    border-radius: 10%;
+}
+#f3
+{
+    display: grid;
+    width: 450px;
+    border: 2px black solid;
+    place-items: center;
+    border-radius: 5%;
+}
+#p1{
+    grid-row: 1/2;
+}
+#p2{
+    grid-row: 2/2;
+    height: 18.4px;
+}
