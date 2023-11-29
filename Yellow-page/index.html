@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yellow Pages</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="ui">
+        <h1 id="colored">Yellow Pages</h1>
+
+        <div id="categories">
+            <div class="category" onclick="showResults('Restaurants')">Restaurants</div>
+            <div class="category" onclick="showResults('Hotels')">Hotels</div>
+            <div class="category" onclick="showResults('Grocery Stores')">Grocery Stores</div>
+            <div class="category" onclick="showResults('Gas Stations')">Gas Stations</div>
+            <div class="category" onclick="showResults('Banks')">Banks</div>
+        </div>
+
+        <div id="results">
+            <p>Click on a category to see results.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
