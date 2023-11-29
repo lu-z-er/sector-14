@@ -1,0 +1,82 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+#invoice{
+    display: none;
+    width: 98%;
+    border: 2px solid;
+    border-color: black;
+    height: auto;
+    padding: 10px;
+    overflow: hidden;
+}
+#formx{
+    display: grid;
+    place-items: center;
+}
+input{
+    margin-bottom: 15px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #ddd;
+}
+
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.total-row {
+  font-weight: bold;
+}
+
+.signature-block {
+  float: right;
+  margin-top: 40px;
+}
+
+.terms-block {
+  float: left;
+  margin-top: 40px;
+  width: 40%;
+}
+
+.terms-description {
+  margin-top: 10px;
+}
+
+.center-heading {
+  text-align: center;
+}
+
+.first-table td {
+  width: 25%;
+}
+
+.ref-table td {
+  width: 25%;
+}
+
+.head-1 {
+  margin-bottom: 0cm;
+}
+
+.in-table td {
+  width: 25%;
+}
+
+.signature-name {
+  text-align: center;
+}

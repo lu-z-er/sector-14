@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Tax Invoice</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <form id="formx" onsubmit="return false">
+    <label for="customer">Customer</label>
+    <input id="customer" type="text">
+    <label for="address">Address</label>
+    <input id="address" type="text">
+    <label for="product">Product</label>
+    <input id="product" type="text">
+    <label for="hsn">Hsn</label>
+    <input id="hsn" type="text">
+    <label for="qty">Quantity</label>
+    <input id="qty" type="text">
+    <label for="rate">Rate</label>
+    <input id="rate" type="text">
+    <label for="gst">Gst</label>
+    <input id="gst" type="text">
+    <button onclick="clicker()">Submit</button>
+  </form>
+  <div id="invoice">
+    <h4 class="center-heading">Tax Invoice</h4>
+    <table class="first-table">
+      <tr>
+        <td>
+          <p>
+          <h2 class="head-1">Bx22 Enterprises</h2>
+          Near Upes, Bidholi, UK - 248007<br>
+          <b>GST-IN: 01BFFEFEFWWXRB</b><br>
+          Phone: 2232323232 e-Mail: bx22.enterprises@yahoo.com
+          </p>
+        </td>
+      </tr>
+    </table>
+    <br>
+    <table class="in-table">
+      <tr>
+        <th>Invoice Id</th>
+        <th>Invoice Dated</th>
+        <th>Reference Id <small>[if any]</small></th>
+      </tr>
+      <tr>
+        <td>2023/SB/01</td>
+        <td id="datex"></td>
+        <td>N/A</td>
+      </tr>
+    </table>
+    <br>
+    <table class="ref-table">
+      <tr>
+        <th>Buyer <small>(bill to)</small></th>
+        <th>Consignee <small>(ship to)</small></th>
+      </tr>
+      <tr>
+        <td class="customer_i"></td>
+        <td class="customer_i"></td>
+      </tr>
+      <tr>
+        <td class="address_i"></td>
+        <td class="address_i"></td>
+      </tr>
+      <tr>
+        <td>GST-IN: N/a</td>
+        <td>GST-IN: N/a</td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>Product</th>
+        <th>HSN</th>
+        <th>Qty</th>
+        <th>Rate</th>
+        <th>GST</th>
+        <th>Taxable Amount</th>
+        <th>GST Amount</th>
+        <th>SubTotal</th>
+      </tr>
+      <tr>
+        <td id="product_i"></td>
+        <td id="hsn_i"></td>
+        <td class="qty_i"></td>
+        <td class="rate_i"></td>
+        <td class="gst_i"></td>
+        <td class="tax_a"></td>
+        <td class="gst_a"></td>
+        <td class="total"></td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>Total Taxable Amount</th>
+        <th>Total GST Amount</th>
+        <th>Rounded Off</th>
+        <th>Grand Total</th>
+      </tr>
+      <tr class="total-row">
+        <td class="tax_a"></td>
+        <td class="gst_a"></td>
+        <td id="rdoff">0.0</td>
+        <td class="total"></td>
+      </tr>
+    </table>
+    <br>
+    <table>
+      <tr>
+        <th>Mode of Delivery</th>
+        <td>MANUAL DELVERY</td>
+      </tr>
+    </table>
+    <div class="terms-block">
+      <p class="terms-description">
+        Note:<br>
+        - Points are rounded off.<br>
+        - Subject to "UK" jurisdiction only.<br>
+        - Terms and Conditions Apply.
+      </p>
+    </div>
+    <div class="signature-block">
+      <p class="signature-title">For Bx22 Enterprises</p>
+      <p class="signature-name"><small>Authorised Signatory</small></p>
+    </div>
+  </div>
+</body>
+
+</html>
