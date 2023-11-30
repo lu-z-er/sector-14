@@ -16,19 +16,40 @@ section {
     min-height: 100vh;
     width: 100%;
     text-align: center;
+    border-radius: 5px;
 }
 
 a{
     color: white;
 }
-
+#navbar{
+    position: fixed;
+    color: aliceblue;
+    top: 92vh;
+    left: 0%;
+}
+#navbar ul{
+    display: flex;
+    list-style: none;
+    padding-left: 30%;
+    
+}
+#navbar li{
+    margin-right: 40%;
+    font-size: 1.1rem;
+}
+#navbar a:hover{
+    color: red;
+}
 #section-2{
-    background-color: rgb(21, 20, 20);
+    background: black
 }
-#section-4{
-    background-color: rgb(21, 20, 20);
+#section-3{
+    background: black
 }
-
+#alpha{
+    background: linear-gradient( to top,black,black, rgba(116, 1, 1, 0.137),black,black);
+}
 #logo {
     width: 30vh;
     height: 30vh;
@@ -37,7 +58,12 @@ a{
     margin: 15px;
 
 }
-
+#section-2 p{
+    width: 60vw;
+}
+#section-3 p{
+    width: 60vw;
+}
 #p1 {
     font-size: 3vh;
 }
@@ -76,7 +102,7 @@ a{
     padding-left:10px;
     padding-top: 20px;
     font-size: 6vh;
-
+    margin: 15px;
 }
 #pro-1{
     margin-top: 25px;
